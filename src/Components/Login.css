@@ -1,0 +1,26 @@
+.login-container{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    background:
+    linear-gradient(
+    130deg ,
+    rgb(86, 17, 171) 30%,
+      rgba(172, 116, 255, 0.75)  
+    ),
+    linear-gradient(
+    200deg ,
+    #a7213e 50%,
+      #ff4876 50%
+    )
+    ;
+
+   
+}
+
+.login-container button{
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: #ff4876;
+}

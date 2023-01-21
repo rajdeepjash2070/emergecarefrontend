@@ -1,0 +1,15 @@
+.home-img img{
+    height: 350px;
+    width: 400px;
+}
+.facilities a{
+background-color: rgb(255, 95, 26);
+color: white;
+padding: 15px;
+border-radius: 30px;
+margin-top: 40px;
+box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.facilities{
+    margin-top: 100px; 
+}
