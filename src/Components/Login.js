@@ -15,7 +15,7 @@ const Login = () => {
 
   useEffect(() => {
     const fetchusers = async () => {
-      const res = await fetch('https://emergecarebackend.onrender.com/users');
+      const res = await fetch('http://localhost:5000/users');
       const data = await res.json();
       setusers(data);
       

@@ -20,23 +20,39 @@ import './Emergecarehome.css';
 function Emergecarehome() {
   return (
     <div className="Emergecarehome">
-     <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="#" class="logo" style={{color:"green",fontSize:"25px",marginLeft:"100px"}}><i class="fas fa-heartbeat" style={{color:"red"}}></i> <span style={{marginTop:"-10px",marginLeft:"5px"}}>EmergeCare</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<a href="#" class="logo"> <i class="fas fa-heartbeat"></i> EmergeCare</a>
+  <div class="collapse navbar-collapse" id="navbarNav" style={{marginLeft:"300px"}}>
+    <ul class="navbar-nav">
+    <li class="nav-item text-center mt-2">
+        <a class="nav-link" href="#home" style={{color:"white"}}>Home</a>
+      </li>
+      <li class="nav-item text-center mt-2">
+        <a class="nav-link" href="#services" style={{color:"white"}}>Services</a>
+      </li>
+      <li class="nav-item text-center mt-2">
+        <a class="nav-link" href="#about" style={{color:"white"}}>About</a>
+      </li>
+      <li class="nav-item text-center mt-2">
+        <a class="nav-link" href="#review" style={{color:"white"}}>Reviews</a>
+      </li>
+      <li class="nav-item text-center mt-2">
+        <a class="nav-link" href="#blogs" style={{color:"white"}}>Blogs</a>
+      </li>
+      <li class="nav-item text-center mt-2">
+        <a class="nav-link" href="/login" style={{color:"white"}}>Login</a>
+      </li>
+      <li class="nav-item text-center mt-2">
+        <a class="nav-link" href="/register" style={{color:"white"}}>Register</a>
+      </li>
+    </ul>
+  </div>
 
-<nav class="navbar">
-    <a href="#home">home</a>
-    <a href="#services">services</a>
-    <a href="#about">about</a>
-    <a href="#review">review</a>
-    <a href="#blogs">blogs</a>
-    <a href="/login">Login</a>
-    <a href="/register">Register</a>
 </nav>
-
-<div id="menu-btn" class="fas fa-bars"></div>
-
-</header>
 
 {/* <!-- header section ends -->
 
@@ -223,7 +239,7 @@ function Emergecarehome() {
         <p class="text">Had a fantastic experience at EmergeCare. The staff was friendly, facilities were clean and modern, and the doctor was knowledgeable. They took the time to listen to my concerns and provide comprehensive care. Highly recommend for anyone seeking quality healthcare services.</p>
     </div>
 
-    <div class="box col-md-4" style={{width:"300px"}}>
+    <div class="box col-md-4 mt-4" style={{width:"300px"}}>
         <img src={image2} alt=""/>
         <p className="text-center" style={{color:"white"}}>Aditya</p>
         <div class="stars">
@@ -236,7 +252,7 @@ function Emergecarehome() {
         <p class="text">I was in need of emergency medical care and EmergeCare was there for me every step of the way. Their 24/7 ambulance services were prompt and the staff was incredibly professional and compassionate. The facilities were well-equipped and the doctor was knowledgeable, providing expert care to help me recover. I am so grateful for the high-quality care I received at EmergeCare. I highly recommend them to anyone in need of medical attention.</p>
     </div>
 
-    <div class="box col-md-4" style={{width:"300px"}}>
+    <div class="box col-md-4 mt-4" style={{width:"300px"}}>
         <img src={image3} alt=""/>
         <p className="text-center" style={{color:"white"}}>Anuraj</p>
         <div class="stars">

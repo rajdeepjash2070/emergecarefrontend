@@ -7,6 +7,26 @@ margin-left: -300px;
     box-shadow: 0 4px 30px -2px gray;
     height: 80px;
     margin-bottom: 20px;
+    margin-left: 200px;
+}
+.home-searchcontainer{
+      
+    margin-left: 250px;
+ }
+@media (max-width:700px) {
+    .navbar{
+      
+        margin-left: 0px;
+    }
+    .card{
+        margin-left: -10px;
+    }
+
+    .home-searchcontainer{
+      
+       margin-left: 80px;
+    }
+
 }
 .home-searchcontainer input{
     padding: 4px;

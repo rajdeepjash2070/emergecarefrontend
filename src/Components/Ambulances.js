@@ -49,45 +49,31 @@ const history=useNavigate();
 
   return (
     <div>
- <header class="header" style={{height:"90px"}}>
-<Link className="btn btn-primary m-2 navberlinks" to={`/dashboard/${id}`} style={{borderRadius:"60px"}}><i class="fa-sharp fa-solid fa-circle-user" style={{fontSize:"25px"}}></i> Dashboard
-              </Link>
-              {/* <Link className="btn btn-primary m-2" to={`/patientdetails/${id}`} >
-                GO TO YOUR DASHBOARD
-              </Link> */}
-              <Link className="btn btn-primary m-2 navberlinks" to={`/emergency/${id}`} style={{borderRadius:"60px"}}><i class="fa-sharp fa-solid fa-truck-medical"></i> Emergency
-              </Link>
-              <Link className="btn btn-primary m-2 navberlinks" to={`/login`} style={{borderRadius:"60px"}}><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i> Log Out
-              </Link>
-    <div class="search-form">
-      <form action="">
-        <input
-          type="search"
-          name=""
-          id="search-box"
-          placeholder="search here..."
-        />
-        <label for="search-box">
-          <ion-icon name="search-outline"></ion-icon>
-        </label>
-      </form>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+      <li class="nav-item text-center mt-2">
+          <a class="nav-link" href={`/ambulances/${inputs._id}`} style={{color:"white"}}><i class="fa-sharp fa-solid fa-truck-medical"></i> Ambulances</a>
+        </li>
+       
+        <li class="nav-item text-center mt-2">
+          <a class="nav-link" href={`/doctors/${inputs._id}`} style={{color:"white"}}><i class="fa-solid fa-user-doctor"></i> Doctors</a>
+        </li>
+        <li class="nav-item text-center mt-2">
+          <a class="nav-link" href={`/beds/${inputs._id}`} style={{color:"white"}}><i class="fa-solid fa-bed-pulse"></i> Beds</a>
+        </li>
+        <li class="nav-item text-center mt-2">
+          <a class="nav-link" href={`/reviews/${inputs._id}`} style={{color:"white"}}><i class="fa-solid fa-star-sharp"></i> Reviews</a>
+        </li>
+      </ul>
     </div>
-
-    <div class="shopping-cart">
-      <h2>No products in the cart.</h2>
-  </div>
-
-    <div class="login-form">
-      <form action="">
-        <h3>Login Now</h3>
-        <input type="email" name="" placeholder="UserName" />
-        <input type="password" name="" placeholder="Password" />
-        <p>forgot your password? <a href="#">click here</a></p>
-        <p>Don't have an account! <a href="#">create now</a></p>
-        <input type="submit" value="Login Now" class="btn" />
-      </form>
-    </div>
-  </header>
+  
+  </nav>
 <section>
 
 <h1 className='text-center'>Ambulances Contact Numbers</h1>

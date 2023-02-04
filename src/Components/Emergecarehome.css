@@ -362,7 +362,7 @@ section:nth-child(even){
 }
 
 .review .box-container{
-  margin-left: 70px;
+  margin-left: 40px;
 }
 
 .review .box-container .box{
@@ -533,7 +533,11 @@ section:nth-child(even){
 
 
 
-
+@media (max-width: 700px) {
+    .review .box-container{
+        margin-left: -15px;
+    }
+  }
 /* media queries  */
 @media (max-width:991px){
 
@@ -557,31 +561,8 @@ section:nth-child(even){
         display: initial;
     }
 
-    .header .navbar{
-        position: absolute;
-        top:115%; right: 2rem;
-        border-radius: .5rem;
-        box-shadow: var(--box-shadow);
-        width: 30rem;
-        border: var(--border);
-        background: #fff;
-        transform: scale(0);
-        opacity: 0;
-        transform-origin: top right;
-        transition: none;
-    }
 
-    .header .navbar.active{
-        transform: scale(1);
-        opacity: 1;
-        transition: .2s ease-out;
-    }
-
-    .header .navbar a{
-        font-size: 2rem;
-        display: block;
-        margin:2.5rem;
-    }
+    
 
 }
 
