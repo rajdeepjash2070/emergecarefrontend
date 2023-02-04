@@ -57,7 +57,7 @@ const [users,setusers]=useState({
 
    useEffect(() => {
     const fetchdocters = async () => {
-        const res = await fetch(`http://localhost:5000/docters/${id}`);
+        const res = await fetch(`https://emergecarebackend.onrender.com/docters/${id}`);
         const data = await res.json();
         setdocters(data);
         
@@ -70,7 +70,7 @@ const [users,setusers]=useState({
     
 const loginid=(inputs.userid).toString();
   const fetchusers = async () => {
-    const res = await fetch(`http://localhost:5000/users/${inputs.userid}`);
+    const res = await fetch(`https://emergecarebackend.onrender.com/users/${inputs.userid}`);
     const data = await res.json();
     setusers(data);
     console.log("IN the fetch users function")
@@ -107,7 +107,7 @@ if(users.email===inputs.email && users._id===inputs.userid){
    }
 console.log(inputs)
    const sendUser=async()=>{
-    await axios.post(`http://localhost:5000/users/${users._id}`,{
+    await axios.post(`https://emergecarebackend.onrender.com/users/${users._id}`,{
       
        doctername:String(docters.name),
        appointmentdate:String(d),
@@ -124,7 +124,7 @@ console.log(inputs)
     }).then(res=>res.data).then(console.log("user submitted to dashboard")).then(()=>history("/success"));
    }
    const sendRequest=async()=>{
-     await axios.post(`http://localhost:5000/docters/${id}`,{
+     await axios.post(`https://emergecarebackend.onrender.com/docters/${id}`,{
       userid:String(inputs.userid),
        name:String(inputs.name),
        state:String(inputs.state),

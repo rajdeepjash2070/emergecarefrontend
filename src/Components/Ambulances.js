@@ -21,7 +21,7 @@ const history=useNavigate();
     console.log(id);
     useEffect(() => {
         const fetchhospitals = async () => {
-            const res = await fetch(`http://localhost:5000/hospitals/${id}`);
+            const res = await fetch(`https://emergecarebackend.onrender.com/hospitals/${id}`);
             const data = await res.json();
             setInputs(data);
             
@@ -49,7 +49,45 @@ const history=useNavigate();
 
   return (
     <div>
+ <header class="header" style={{height:"90px"}}>
+<Link className="btn btn-primary m-2 navberlinks" to={`/dashboard/${id}`} style={{borderRadius:"60px"}}><i class="fa-sharp fa-solid fa-circle-user" style={{fontSize:"25px"}}></i> Dashboard
+              </Link>
+              {/* <Link className="btn btn-primary m-2" to={`/patientdetails/${id}`} >
+                GO TO YOUR DASHBOARD
+              </Link> */}
+              <Link className="btn btn-primary m-2 navberlinks" to={`/emergency/${id}`} style={{borderRadius:"60px"}}><i class="fa-sharp fa-solid fa-truck-medical"></i> Emergency
+              </Link>
+              <Link className="btn btn-primary m-2 navberlinks" to={`/login`} style={{borderRadius:"60px"}}><i class="fa-sharp fa-solid fa-arrow-right-from-bracket"></i> Log Out
+              </Link>
+    <div class="search-form">
+      <form action="">
+        <input
+          type="search"
+          name=""
+          id="search-box"
+          placeholder="search here..."
+        />
+        <label for="search-box">
+          <ion-icon name="search-outline"></ion-icon>
+        </label>
+      </form>
+    </div>
 
+    <div class="shopping-cart">
+      <h2>No products in the cart.</h2>
+  </div>
+
+    <div class="login-form">
+      <form action="">
+        <h3>Login Now</h3>
+        <input type="email" name="" placeholder="UserName" />
+        <input type="password" name="" placeholder="Password" />
+        <p>forgot your password? <a href="#">click here</a></p>
+        <p>Don't have an account! <a href="#">create now</a></p>
+        <input type="submit" value="Login Now" class="btn" />
+      </form>
+    </div>
+  </header>
 <section>
 
 <h1 className='text-center'>Ambulances Contact Numbers</h1>

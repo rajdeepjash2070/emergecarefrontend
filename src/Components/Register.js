@@ -34,7 +34,7 @@ import "./Register.css"
      }))
    }
    const sendRequest=async()=>{
-     await axios.post(`http://localhost:5000/users/register`,{
+     await axios.post(`https://emergecarebackend.onrender.com/users/register`,{
         name:String(inputs.name),
        
       address:String(inputs.address),

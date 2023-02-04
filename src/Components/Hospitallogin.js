@@ -11,7 +11,7 @@ const Hospitallogin = () => {
 
   useEffect(() => {
     const fetchhospitals = async () => {
-      const res = await fetch('http://localhost:5000/hospitals');
+      const res = await fetch('https://emergecarebackend.onrender.com/hospitals');
       const data = await res.json();
       sethospitals(data);
       

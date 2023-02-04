@@ -13,7 +13,7 @@ const location = useGeoLocation();
     console.log(id);
     useEffect(() => {
         const fetchhospitals = async () => {
-            const res = await fetch(`http://localhost:5000/hospitals/${id}`);
+            const res = await fetch(`https://emergecarebackend.onrender.com/hospitals/${id}`);
             const inputs = await res.json();
             setInputs(inputs);
             
@@ -37,6 +37,17 @@ specialist,
 state,
 district,
 near,
+phnumber1,
+phnumber2,
+phnumber3,
+phnumber4,
+phnumber5,
+phnumber6,
+phnumber7,
+phnumber8,
+phnumber9,
+phnumber10,
+
 pin,
 email,
 oxygen,
@@ -58,7 +69,7 @@ longi,
 lati,
     }=inputs;
     
-        const res2 = await fetch(`http://localhost:5000/hospitals/${id}`,{
+        const res2 = await fetch(`https://emergecarebackend.onrender.com/hospitals/${id}`,{
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -75,6 +86,17 @@ lati,
                 district,
                 near,
                 pin,
+                phnumber1,
+                phnumber2,
+                phnumber3,
+                phnumber4,
+                phnumber5,
+                phnumber6,
+                phnumber7,
+                phnumber8,
+                phnumber9,
+                phnumber10,
+
                 email,
                 oxygen,
                 plasmabank,
@@ -125,6 +147,8 @@ lati,
 
     { inputs && (<form className='p-4 form-container' onSubmit={handleSubmit}>
 <div><img src={inputs.avatar} alt="Docter Image"/></div>
+
+<h1 className='text-center'>BASIC DETAILS</h1>
  <div className="mb-3">
  Name:
  <input
@@ -240,11 +264,125 @@ value={inputs.pin}
 onChange={handleChange}
 />
 </div>
+<hr/>
 
-
-
-
+<h1 className='text-center'>Edit Ambulance Contact Numbers</h1>
 <div className="mb-2">
+Contact Number 1
+  <input
+  className="form-control"
+  placeholder="Contact Number 1"
+  type="text"
+  name="phnumber1"
+  value={inputs.phnumber1}
+  onChange={handleChange}
+/>
+  </div>
+  
+  <div className="mb-2">
+  Contact Number 2
+  <input
+  className="form-control"
+  placeholder="Contact Number 2"
+  type="text"
+  name="phnumber2"
+  value={inputs.phnumber2}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 3
+  <input
+  className="form-control"
+  placeholder="Contact Number 3"
+  type="text"
+  name="phnumber3"
+  value={inputs.phnumber3}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 4
+  <input
+  className="form-control"
+  placeholder="Contact Number 4"
+  type="text"
+  name="phnumber4"
+  value={inputs.phnumber4}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 5
+  <input
+  className="form-control"
+  placeholder="Contact Number 5"
+  type="text"
+  name="phnumber5"
+  value={inputs.phnumber5}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 6
+  <input
+  className="form-control"
+  placeholder="Contact Number 6"
+  type="text"
+  name="phnumber6"
+  value={inputs.phnumber6}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 7
+  <input
+  className="form-control"
+  placeholder="Contact Number 7"
+  type="text"
+  name="phnumber7"
+  value={inputs.phnumber7}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 8
+  <input
+  className="form-control"
+  placeholder="Contact Number 8"
+  type="text"
+  name="phnumber8"
+  value={inputs.phnumber8}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 9
+  <input
+  className="form-control"
+  placeholder="Contact Number 9"
+  type="text"
+  name="phnumber9"
+  value={inputs.phnumber9}
+  onChange={handleChange}
+/>
+  </div>
+  <div className="mb-2">
+  Contact Number 10
+  <input
+  className="form-control"
+  placeholder="Contact Number 10"
+  type="text"
+  name="phnumber10"
+  value={inputs.phnumber10}
+  onChange={handleChange}
+/>
+  </div>
+<hr/>
+
+<h1 className='text-center'>Critical Details</h1>
+<div className="mb-2">
+Current amount of Oxygen in Litres
   <input
   className="form-control"
   placeholder="Current amount of Oxygen in Litres"
@@ -263,6 +401,7 @@ onChange={handleChange}
             </select>
   </div>
   <div className="mb-2">
+  Total Number of Physicians in Your Hospital
   <input
   className="form-control"
   placeholder="Total Number of Physicians in Your Hospital"
@@ -273,6 +412,7 @@ onChange={handleChange}
 />
   </div>
   <div className="mb-2">
+  Number of Blood Bank in Your Hospital
   <input
   className="form-control"
   placeholder="Number of Blood Bank in Your Hospital"
@@ -291,8 +431,9 @@ onChange={handleChange}
       
             </select>
   </div>
-
+<h1 className='text-center'>Number of Beds</h1>
   <div className="mb-2">
+  Number of General Beds Available
   <input
   className="form-control"
   placeholder="Number of General Beds Available"
@@ -304,6 +445,7 @@ onChange={handleChange}
   </div>
 
   <div className="mb-2">
+  Number of Covid Beds Available
   <input
   className="form-control"
   placeholder="Number of Covid Beds Available"
@@ -314,6 +456,7 @@ onChange={handleChange}
 />
   </div>
   <div className="mb-2">
+  Number of Covid Beds with Oxygen Support Available
   <input
   className="form-control"
   placeholder="Number of Covid Beds with Oxygen Support Available"
@@ -324,6 +467,7 @@ onChange={handleChange}
 />
   </div>
   <div className="mb-2">
+  Number of ICU Beds Available
   <input
   className="form-control"
   placeholder="Number of ICU Beds Available"
@@ -334,6 +478,7 @@ onChange={handleChange}
 />
   </div>
   <div className="mb-2">
+  Number of CCU Beds Available
   <input
   className="form-control"
   placeholder="Number of CCU Beds Available"
@@ -345,6 +490,7 @@ onChange={handleChange}
   </div>
 
   <div className="mb-2">
+  Number of Dengue Beds Available
   <input
   className="form-control"
   placeholder="Number of Dengue Beds Available"
@@ -356,6 +502,7 @@ onChange={handleChange}
   </div>
 
   <div className="mb-2">
+  Number of Malaria Beds Available
   <input
   className="form-control"
   placeholder="Number of Malaria Beds Available"
@@ -366,6 +513,7 @@ onChange={handleChange}
 />
   </div>
   <div className="mb-2">
+  Number of Pregnant Beds Available
   <input
   className="form-control"
   placeholder="Number of Pregnant Beds Available"
@@ -376,6 +524,7 @@ onChange={handleChange}
 />
   </div>
   <div className="mb-2">
+  Number of Burn Beds Available
   <input
   className="form-control"
   placeholder="Number of Burn Beds Available"
@@ -386,6 +535,7 @@ onChange={handleChange}
 />
   </div>
   <div className="mb-2">
+  Number of Cabins Available
   <input
   className="form-control"
   placeholder="Number of Cabins Available"
@@ -396,7 +546,7 @@ onChange={handleChange}
 />
   </div>
 <div className="mb-2">
-Your Email
+Hospital's Official Email
 <input
 className="form-control"
 placeholder="Your Email"

@@ -21,7 +21,7 @@ const history=useNavigate();
     console.log(id);
     useEffect(() => {
         const fetchhospitals = async () => {
-            const res = await fetch(`http://localhost:5000/hospitals/${id}`);
+            const res = await fetch(`https://emergecarebackend.onrender.com/hospitals/${id}`);
             const data = await res.json();
             setInputs(data);
             
@@ -51,7 +51,7 @@ const history=useNavigate();
     <div>
 
 <section>
-<a className="p-4 mt-4" href={`/${inputs._id}/adminaddambulances`} style={{fontSize:"20px",backgroundColor:"green",color:"white",marginLeft:"500px"}}>Add Contact Number Here</a>
+
 <h1 className='text-center'>Ambulances Contact Numbers</h1>
 
 <div className='amb-phnumber' style={{marginLeft:"400px"}}>

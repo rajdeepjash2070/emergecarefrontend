@@ -25,6 +25,11 @@ import Hospitalprofile from './Components/Hospitalprofile';
 import Beds from './Components/Beds';
 import Ambulances from './Components/Ambulances';
 import Doctors from "./Components/Doctors"
+import Bookbed from './Components/Bookbed';
+import Success from './Components/Success';
+import Userdashboard from './Components/Userdashboard';
+import Emergency from './Components/Emergency';
+import Emergecarehome from './Components/Emergecarehome';
 
 function App() {
   return (
@@ -36,6 +41,8 @@ function App() {
        <Routes>
               <Route path="/home/:id" element={<Home/>}/>
               <Route path="/register" element={<Register/>}/>
+          
+              <Route path="/" element={<Emergecarehome/>}/>
               <Route path="/login" element={<Login/>}/>
               <Route path="/userprofile/:id" element={<Userprofile/>}/>
               <Route path="/docterprofile/:id" element={<Docterprofile/>}/>
@@ -55,6 +62,10 @@ function App() {
               <Route path="/beds/:id" element={<Beds/>}/>
               <Route path="/ambulances/:id" element={<Ambulances/>}/>
               <Route path="/doctors/:id" element={<Doctors/>}/>
+              <Route path="/bookbed/:id" element={<Bookbed/>}/>
+              <Route path="/dashboard/:id" element={<Userdashboard/>}/>
+              <Route path="/emergency/:id" element={<Emergency/>}/>
+              <Route path="/success" element={<Success/>}/>
               <Route path="/bookdoctorappointment" element={<Bookdoctorappointment/>}/>
             </Routes>
             </Router>

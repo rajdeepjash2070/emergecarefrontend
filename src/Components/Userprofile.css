@@ -1,9 +1,12 @@
-.prof-icon{
-    background-color: aquamarine;
-    font-size: 40px;
-    height: 130px;
-    width: 130px;
+
+
+.container img{
+    height: 400px;
+    width: 400px;
     
+}
+.header{
+font-size: 20px;
 }
 .appointments p{
 

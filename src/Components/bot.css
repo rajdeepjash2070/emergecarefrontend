@@ -1,0 +1,43 @@
+.chatbot-2{
+    display: flex;
+    z-index: 9999;
+   
+   position: fixed;
+   top: 500px;
+   left: 10px;
+   /* position: relative; */
+}
+.bot{
+    position: relative;
+    top: -420px; 
+    left: -20px;
+
+}
+.display{
+    display: none;
+}
+.close{
+  position: relative;
+  top: -400px;
+  left: 310px;
+  weight: 500;
+  /* width: 100px; */
+  color: black;
+  /* size: 20px; */
+  z-index: 9999;
+  cursor:pointer;
+}
+
+.chatbot-img{
+    width: 112px;
+    height: 95px;
+    position: relative;
+    z-index: 100;
+    /* top: -479px; */
+    cursor:pointer;
+}
+/* @media only screen and (max-width: 992px){
+    .chatbot-2{
+        top: -114px;
+    }
+} */

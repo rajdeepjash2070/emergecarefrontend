@@ -73,7 +73,7 @@ const Addhospital = () => {
       formData.append("longi", location.coordinates.lng);
       formData.append("lati", location.coordinates.lat);
      
-      const res = await fetch(`http://localhost:5000/hospitals`, {
+      const res = await fetch(`https://emergecarebackend.onrender.com/hospitals`, {
         method: "POST",
         body: formData,
       });

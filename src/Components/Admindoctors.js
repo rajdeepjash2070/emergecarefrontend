@@ -4,14 +4,14 @@ const Admindoctors = () => {
   return (
     <div>
 <div class="container d-flex justify-content-center">
-    <div class="card p-3 py-4" style={{width:"500px"}}>
+    <div class="card p-3 py-4">
         <div class="text-center"> 
-		<img src={Doctoravatar} width="100" class="rounded-circle"/>
-            <h3 class="mt-2 text-center" style={{fontSize:"12px"}}>Sourav Nag(Medicine Specialist)</h3>
+		<i class="fa-solid fa-user-doctor"></i>
+            <h2 class="mt-2 text-center" style={{fontSize:"12px"}}>Sourav Nag(Medicine Specialist)</h2>
 			<span class="mt-1 clearfix">Chamber in Barasat,West Bengal</span>
 			
 			<div class="row mt-3 mb-3">
-			<h3 className='text-center'>Timings</h3>
+			<h2 className='text-center'>Timings</h2>
 			  <div class="col-md-4">
 				<h5>Monday</h5>
 				<span class="num">4.00 p.m</span>
@@ -34,7 +34,7 @@ const Admindoctors = () => {
 			  
 			 <div class="profile mt-5">
 			 
-			 
+			  
 
 		</div>
 
@@ -45,14 +45,14 @@ const Admindoctors = () => {
         
     </div>
 
-    <div class="card p-3 py-4" style={{width:"500px"}}>
+    <div class="card p-3 py-4">
         <div class="text-center"> 
-		<img src={Doctoravatar} width="100" class="rounded-circle"/>
-            <h3 class="mt-2 text-center" style={{fontSize:"12px"}}>Abhishek Ray(Medicine Specialist)</h3>
+		<i class="fa-solid fa-user-doctor"></i>
+            <h2 class="mt-2 text-center" style={{fontSize:"12px"}}>Abhishek Ray(Medicine Specialist)</h2>
 			<span class="mt-1 clearfix">Chamber in Asansol,West Bengal</span>
 			
 			<div class="row mt-3 mb-3">
-			<h3 className='text-center'>Timings</h3>
+			<h2 className='text-center'>Timings</h2>
 			  <div class="col-md-4">
 				<h5>Monday</h5>
 				<span class="num">4.00 p.m</span>
@@ -75,7 +75,7 @@ const Admindoctors = () => {
 			  
 			 <div class="profile mt-5">
 			 
-			 
+			  
 
 		</div>
 
@@ -86,14 +86,14 @@ const Admindoctors = () => {
         
     </div>
 
-    <div class="card p-3 py-4" style={{width:"500px"}}>
+    <div class="card p-3 py-4">
         <div class="text-center"> 
-		<img src={Doctoravatar} width="100" class="rounded-circle"/>
-            <h3 class="mt-2 text-center" style={{fontSize:"12px"}}>Prerna Pallvi(Medicine Specialist)</h3>
+		<i class="fa-solid fa-user-doctor"></i>
+            <h2 class="mt-2 text-center" style={{fontSize:"12px"}}>Prerna Pallvi(Medicine Specialist)</h2>
 			<span class="mt-1 clearfix">Chamber in Asansol,West Bengal</span>
 			
 			<div class="row mt-3 mb-3">
-			<h3 className='text-center'>Timings</h3>
+			<h2 className='text-center'>Timings</h2>
 			  <div class="col-md-4">
 				<h5>Monday</h5>
 				<span class="num">4.00 p.m</span>
@@ -116,7 +116,7 @@ const Admindoctors = () => {
 			  
 			 <div class="profile mt-5">
 			 
-			 
+			  
 
 		</div>
 
@@ -127,14 +127,14 @@ const Admindoctors = () => {
         
     </div>
 
-    <div class="card p-3 py-4" style={{width:"500px"}}>
+    <div class="card p-3 py-4">
         <div class="text-center"> 
-		<img src={Doctoravatar} width="100" class="rounded-circle"/>
-            <h3 class="mt-2 text-center" style={{fontSize:"12px"}}>Sudipta Bhattacharjya(Cardiology Specialist)</h3>
+		<i class="fa-solid fa-user-doctor"></i>
+            <h2 class="mt-2 text-center" style={{fontSize:"12px"}}>Sudipta Bhattacharjya(Cardiology Specialist)</h2>
 			<span class="mt-1 clearfix">Chamber in BidhanNagar Durgapur,West Bengal</span>
 			
 			<div class="row mt-3 mb-3">
-			<h3 className='text-center'>Timings</h3>
+			<h2 className='text-center'>Timings</h2>
 			  <div class="col-md-4">
 				<h5>Monday</h5>
 				<span class="num">4.00 p.m</span>
@@ -157,7 +157,7 @@ const Admindoctors = () => {
 			  
 			 <div class="profile mt-5">
 			 
-			 
+			  
 
 		</div>
 
@@ -168,8 +168,6 @@ const Admindoctors = () => {
         
     </div>
 </div>
-
-
 
       
     </div>
