@@ -26,7 +26,7 @@ function Emergecarehome() {
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarNav" style={{marginLeft:"300px"}}>
+  <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
     <li class="nav-item text-center mt-2">
         <a class="nav-link" href="#home" style={{color:"white"}}>Home</a>
